@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>590</width>
+    <height>430</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLineEdit" name="txtTask">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="add">
+        <property name="text">
+         <string>Add</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QListWidget" name="listWidget"/>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Orientation::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #3498db;    /* Background color */
+    color: white;                /* Text color */
+    border: 2px solid #2c3e50;   /* Border style */
+    border-radius: 10px;         /* Rounded corners */
+    padding: 5px ;         /* Padding */
+    font-size: 12px;             /* Font size */
+    font-weight: bold;           /* Font weight */
+}
+
+QPushButton:hover {
+    background-color: #2980b9;   /* Background color on hover */
+}
+
+QPushButton:pressed {
+    background-color: #1abc9c;   /* Background color when pressed */
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Open dialog</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="remove">
+        <property name="text">
+         <string>Remove</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="removeAll">
+        <property name="text">
+         <string>Remove All</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
